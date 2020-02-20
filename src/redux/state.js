@@ -145,8 +145,10 @@ export default {
            "horsepower":225
         }
     ],
+
     makes: {
        "value": [],
     }
+    
   };
   
