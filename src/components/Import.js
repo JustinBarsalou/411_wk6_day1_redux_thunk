@@ -10,13 +10,12 @@ const Import = (props) => {
             <p>Import Component</p>
             <Button variant='contained' color='primary' onClick={props.fetchMakes}>Import</Button>
             <Table>
-                <TableCell>Dessert (100g serving)</TableCell>
                 <TableCell align="right">ID</TableCell>
                 <TableCell align="right">Make&nbsp;</TableCell>
                 <TableCell align="right">Actions&nbsp;</TableCell>
  
                 <TableBody>
-                    {props.make.map(row => (
+                    {props.makes.map(row => (
                         <TableRow key={row.name}>
                             <TableCell component="th" scope="row">
                                 {row.name}

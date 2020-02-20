@@ -146,9 +146,7 @@ export default {
         }
     ],
 
-    makes: {
-       "value": [],
-    }
-    
+    makes: []
+
   };
   
