@@ -1,5 +1,8 @@
 import React from 'react'
 import { Button, Table, TableHead, TableBody, TableRow, TableCell, Container } from '@material-ui/core'
+import { MoreVert } from '@material-ui/icons'
+import Menu from '@material-ui/core/Menu';
+import MenuItem from '@material-ui/core/MenuItem';
 // import { TableCell } from '@material-ui/core';
 
 const Import = (props) => {
@@ -23,6 +26,9 @@ const Import = (props) => {
                             <TableCell align="right">{row.MakeId}</TableCell>
                             <TableCell align="right">{row.MakeName}</TableCell>
                             {/* <TableCell align="right">{row.}</TableCell> */}
+                            <MoreVert oncClick={props.deleteMakes}>
+                                
+                            </MoreVert>
                         </TableRow>
                     ))}
                 </TableBody>

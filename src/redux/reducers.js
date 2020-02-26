@@ -19,6 +19,9 @@ const makes = (state = [], action) => {
     switch(action.type) {
         case 'FETCH_MAKES':
             return action.value
+        case 'DELETE_MAKES':
+            const deletingRow = state[action]
+            return deletingRow
         default:
             return state
     }

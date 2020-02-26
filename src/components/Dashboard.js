@@ -11,6 +11,7 @@ import DeleteIcon from '@material-ui/icons/Delete'
 import Chart from '../containers/Chart'
 import Total from '../containers/Total'
 import AddCar from '../containers/AddCar'
+import Import from '../containers/Import'
  
 const Dashboard = (props) => {
     return (
@@ -20,6 +21,7 @@ const Dashboard = (props) => {
                 <Chart />
                 <Total />
                 <AddCar carTotal={props.cars.length} />
+                <Import />
             </div>
             <Table>
                 <TableHead>
